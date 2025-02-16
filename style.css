@@ -239,25 +239,31 @@ section {
 }
 
 /* 🌟 Responsive Design */
-@media (max-width:1023px) {
+@media (max-width: 1023px) {
     header {
-        padding: 12px 20px;
+        padding: 12px 5%;
     }
 
     .navigation a {
-        padding-left: 10px;
+        padding-left: 8px;
+        font-size: 0.9em;
     }
 
     .title {
         font-size: 1.8em;
+        text-align: center;
     }
 
     section {
-        padding: 80px 20px;
+        padding: 60px 5%;
+    }
+
+    .main-content {
+        text-align: center;
     }
 
     .main-content h2 {
-        font-size: 1em;
+        font-size: 1.2em;
     }
 
     .main-content h3 {
@@ -267,12 +273,79 @@ section {
     .content {
         flex-direction: column;
         align-items: center;
+        text-align: center;
+    }
+
+    .main img {
+        width: 80%;
+        max-width: 350px;
     }
 }
 
-@media (max-width:641px) {
+@media (max-width: 641px) {
+    body {
+        font-size: 14px;
+    }
+
+    .main-content h2 {
+        font-size: 1em;
+    }
+
+    .main-content h3 {
+        font-size: 1.4em;
+    }
+
+    .navigation a {
+        font-size: 0.85em;
+        padding: 5px;
+    }
+
+    .main img {
+        width: 90%;
+        max-width: 280px;
+    }
+
+    section {
+        padding: 50px 8%;
+    }
+}
+
+@media (max-width: 450px) {
     body {
         font-size: 12px;
+    }
+
+    .main-content h2 {
+        font-size: 0.9em;
+    }
+
+    .main-content h3 {
+        font-size: 1.2em;
+    }
+
+    .navigation {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .navigation a {
+        display: block;
+        margin-bottom: 5px;
+    }
+
+    .main img {
+        width: 100%;
+        max-width: 250px;
+    }
+
+    section {
+        padding: 40px 10%;
+    }
+}
+
+@media (max-width: 300px) {
+    body {
+        font-size: 10px;
     }
 
     .main-content h2 {
@@ -280,12 +353,19 @@ section {
     }
 
     .main-content h3 {
-        font-size: 1.4em;
+        font-size: 1em;
     }
-}
 
-@media (max-width:300px) {
-    body {
-        font-size: 10px;
+    .navigation a {
+        font-size: 0.75em;
+    }
+
+    .main img {
+        width: 100%;
+        max-width: 200px;
+    }
+
+    section {
+        padding: 30px 10%;
     }
 }
