@@ -20,8 +20,8 @@
 /* Global Colors - The following color variables are used throughout the website. Updating them here will change the color scheme of the entire website */
 :root { 
   --background-color: #ffffff; /* Background color for the entire website, including individual sections */
-  --default-color: #224364; /* Default color used for the majority of the text content across the entire website */
-  --heading-color: #143461; /* Color for headings, subheadings and title throughout the website */
+  --default-color: #272829; /* Default color used for the majority of the text content across the entire website */
+  --heading-color: #050d18; /* Color for headings, subheadings and title throughout the website */
   --accent-color: #149ddd; /* Accent color that represents your brand on the website. It's used for buttons, links, and other elements that need to stand out */
   --surface-color: #ffffff; /* The surface color is used as a background of boxed elements within sections, such as cards, icon boxes, or other elements that require a visual separation from the global background. */
   --contrast-color: #ffffff; /* Contrast color for text, ensuring readability against backgrounds of accent, heading, or default colors. */
@@ -45,7 +45,7 @@
 }
 
 .dark-background {
-  --background-color: #072144;
+  --background-color: #040b14;
   --default-color: #ffffff;
   --heading-color: #ffffff;
   --surface-color: #151f2b;
@@ -531,8 +531,7 @@ section,
   width: 50px;
   height: 3px;
   background: var(--accent-color);
-  /* left: 0; */
-  left: 48%;
+  left: 0;
   bottom: 0;
 }
 
@@ -781,34 +780,6 @@ section,
 /*--------------------------------------------------------------
 # Portfolio Section
 --------------------------------------------------------------*/
-
-
-/* Portfolio Section Styles */
-.portfolio-item-left .portfolio-item {
-  order: 1;
-}
-.portfolio-item-left .p-3 {
-  order: 2;
-}
-
-.portfolio-item-right .portfolio-item {
-  order: 2;
-}
-.portfolio-item-right .p-3 {
-  order: 1;
-}
-
-/* Ensure responsive behavior */
-@media (max-width: 991px) {
-  .portfolio-item-left .portfolio-item,
-  .portfolio-item-right .portfolio-item,
-  .portfolio-item-left .p-3,
-  .portfolio-item-right .p-3 {
-    order: initial;
-  }
-}
-
-
 .portfolio .portfolio-filters {
   padding: 0;
   margin: 0 auto 20px auto;
